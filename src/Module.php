@@ -3,7 +3,6 @@
 namespace nullref\dialog;
 
 use nullref\dialog\components\UserManager;
-use nullref\core\interfaces\IAdminModule;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\base\Module as BaseModule;
@@ -11,7 +10,7 @@ use yii\base\Module as BaseModule;
 /**
  * dialog module definition class
  */
-class Module extends BaseModule //implements IAdminModule
+class Module extends BaseModule
 {
     /**
      * @return UserManager
@@ -20,13 +19,6 @@ class Module extends BaseModule //implements IAdminModule
     {
         return Yii::$app->getModule('dialog')->get('userManager');
     }
-
-    /*public static function getAdminMenu()
-    {
-        return [
-            //@todo
-        ];
-    }*/
 
     /**
      * @throws InvalidConfigException
