@@ -15,7 +15,7 @@ class m160905_123324_add_dialog_tables extends Migration
     {
         $this->createTable($this->dialogTable, [
             'id' => $this->primaryKey(),
-            'type' => $this->smallInteger(),
+            'type' => $this->string(),
             'user_id' => $this->integer(),
             'created_at' => $this->integer(),
         ], $this->getTableOptions());

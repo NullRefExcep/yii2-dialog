@@ -13,7 +13,7 @@ use yii\db\ActiveRecord;
  * This is the model class for table "{{%dialog}}".
  *
  * @property integer $id
- * @property integer $type
+ * @property string $type
  * @property integer $created_at
  * @property integer $user_id
  *
@@ -59,7 +59,8 @@ class Dialog extends ActiveRecord implements DialogInterface
     public function rules()
     {
         return [
-            [['type', 'created_at', 'user_id'], 'integer'],
+            ['type', 'string'],
+            [['created_at', 'user_id'], 'integer'],
         ];
     }
 
