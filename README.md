@@ -28,9 +28,11 @@ Then add module to application config:
 ...
     'dialog' => [
         'class' => 'nullref\dialog\Module',
-        'userManager' => [
-            'class' => 'nullref\dialog\components\UserManager',
-            'modelClass' => 'your User model class',
+        'components' => [
+            'userManager' => [
+                'class' => 'nullref\dialog\components\UserManager',
+                'modelClass' => 'your User model class',
+            ],
         ],
     ],
 ...
