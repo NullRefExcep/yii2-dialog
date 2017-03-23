@@ -117,4 +117,18 @@ class Dialog extends ActiveRecord implements DialogInterface
     {
         return $this->userRelation;
     }
+    
+    /**
+     * @param UserModel $user
+     */
+    public function attachUser(UserModel $user)
+    {
+        $relation = UserHasDialog::find()->where(['user_id' => $user->getId(), 'dialog_id' => $this->id])->one();
+        if ($relation == null) {
+            $relation = new UserHasDialog();
+            $relation->dialog_id = $this->id;
+            $relation->user_id = $user->getId();
+            $relation->save();
+        }
+    }
 }
