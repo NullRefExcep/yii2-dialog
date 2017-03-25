@@ -48,4 +48,18 @@ Then add module to application config:
 User model class must implements `nullref\dialog\interfaces\UserModel`.
 
 
+## Usage
+
+
+You can use dialog widget(nullref\dialog\widgets\Dialog):
+
+```php
+<?= nullref\dialog\widgets\Dialog::widget([
+    'dialog' => $dialog, // instance of Dialog model (nullref\dialog\models\Dialog)
+    'user' => Yii::$app->user->getIdentity(), //instance of current user
+    'canWrite' => true, // allows write messages
+    'canDelete' => true, // allows delete own messages
+]) ?>
+```
+
 
