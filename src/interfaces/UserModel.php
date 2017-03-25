@@ -15,4 +15,9 @@ interface UserModel
      */
     public function getId();
 
+    /**
+     * @return string
+     */
+    public function getDialogUsername();
+
 }

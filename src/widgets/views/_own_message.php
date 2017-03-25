@@ -12,6 +12,9 @@ use yii\helpers\Url;
 
 
 <div class="message pull-right well">
+    <p class="message-author">
+        <?= Html::encode($model->getUser()->getDialogUsername()) ?>
+    </p>
     <?php if ($canDelete): ?>
         <p>
             <?= Html::a(FA::i(FA::_TRASH), [
