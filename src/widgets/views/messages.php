@@ -7,7 +7,10 @@
  * @var  $user            \nullref\dialog\interfaces\UserModel|null
  */
 use nullref\dialog\models\Message;
+use rmrevin\yii\fontawesome\AssetBundle as FontAwesomeAssetBundle;
 use yii\widgets\ListView;
+
+FontAwesomeAssetBundle::register($this);
 
 ?>
 
