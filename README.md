@@ -2,6 +2,11 @@
 
 Yii2 module for dialogs (WIP)
 
+[![Latest Stable Version](https://poser.pugx.org/nullref/yii2-dialog/v/stable)](https://packagist.org/packages/nullref/yii2-dialog) 
+[![Total Downloads](https://poser.pugx.org/nullref/yii2-dialog/downloads)](https://packagist.org/packages/nullref/yii2-dialog) 
+[![Latest Unstable Version](https://poser.pugx.org/nullref/yii2-dialog/v/unstable)](https://packagist.org/packages/nullref/yii2-dialog) 
+[![License](https://poser.pugx.org/nullref/yii2-dialog/license)](https://packagist.org/packages/nullref/yii2-dialog)
+
 
 ## Installation
 
